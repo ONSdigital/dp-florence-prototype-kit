@@ -8,307 +8,129 @@ language-switch: false
 footer: false
 ---
 
+<style media="screen">
+  ul.list-links {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.list-links li {
+    border-top: 1px solid #D0D2D3;
+    padding: 24px 0 24px 0;
+  }
+
+  ul.list-links li span {
+    display: block;
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    ul.list-links li {
+      display: flex;
+    }
+
+  ul.list-links li span {
+    width:80%;
+  }
+
+  ul.list-links li span:last-child {
+    width:20%;
+  }
+}
+</style>
+
 <div class="prototype florence margin-bottom--3">
 
   <div class="wrapper margin-top--6">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
         <a class="back-link" href="task">Back</a>
-        <h1 class="roboto padding-top--0">Change key metadata</h1>
-        <p>Dataset: Consumer Prices Index including owner occupiers' housing costs (CPIH)</p>
-
-
-        <details role="group" class="margin-top--4">
-          <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What is this page?</span>
-          </summary>
-          <div class="panel" id="details-content-0" aria-hidden="true">
-            <ul class="margin-bottom--0">
-              <li>This page contains key information about the dataset</li>
-              <li>Editing this metadata will affect all releases of this data</li>
-            </ul>
-          </div>
-        </details>
+        <h1 class="roboto padding-top--2">Change key metadata</h1>
       </div>
     </div>
-  </div>
-
-  <div class="wrapper margin-top--6">
-    <hr>
-  </div>
-
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Title</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Consumer Prices Index including owner occupiers' housing costs (CPIH)</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
   </div>
 
   <div class="wrapper padding-top--2 padding-bottom--0">
     <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">ID</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">cpih01</p>
+      <div class="col col--lg-two-thirds col--lg-two-thirds">
+
+        <p class="margin-bottom--3"><strong>ID</strong> CPIH01</p>
+
+        <label class="form__label" for="title">Title</label>
+        <input class="form__text-area" id="title" name="title" value="Consumer Prices Index including owner occupiers' housing costs (CPIH)">
+
+        <label class="form__label" for="about">About this dataset</label>
+        <textarea class="form__text-area" id="about" name="about" rows="8">CPIH is the most comprehensive measure of inflation. It extends CPI to include a measure of the costs associated with owning, maintaining and living in one's own home, known as owner occupiers' housing costs (OOH), along with council tax. This dataset provides CPIH time series (2005 to latest published month), allowing users to customise their own selection, view or download.</textarea>
+
+        <label class="form__label" for="keywords">Keywords</label>
+        <input class="form__text-area" id="keywords" name="keywords" value="Inflation, Economy">
+
+        <label class="form__label" for="usage">Usage information</label>
+        <input class="form__text-area" id="usage" name="usage" value="Open Government Licence v3.0">
+
+        <fieldset>
+          <legend>
+            <p class="font-weight--bold margin-top--1">
+              National Statistic
+            </p>
+          </legend>
+              <input id="national-statistic-1" name="national-statistic" type="radio" value="yes" checked="checked">
+              <label for="national-statistic-1">Yes</label>
+              <input id="national-statistic-2" name="national-statistic" type="radio" value="no" class="margin-left--1">
+              <label for="national-statistic-2">No</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend>
+            <p class="font-weight--bold margin-top--1">
+              Release frequency
+            </p>
+          </legend>
+            <div><input id="release-frequency-1" name="release-frequency" type="radio" value="weekly">
+            <label for="release-frequency-1">Weekly</label></div>
+            <div><input id="release-frequency-2" name="release-frequency" type="radio" value="monthly" checked="checked">
+            <label for="release-frequency-2">Monthly</label></div>
+            <div><input id="release-frequency-3" name="release-frequency" type="radio" value="quarterly">
+            <label for="release-frequency-3">Quarterly</label></div>
+            <div><input id="release-frequency-4" name="release-frequency" type="radio" value="annually">
+            <label for="release-frequency-4">Annually</label></div>
+        </fieldset>
+
+        <h2 class="margin-top--4">Contact details</h2>
+
+        <label class="form__label" for="contact-name">Contact name</label>
+        <input class="form__text-area" id="contact-name" name="contact-name" value="James Tucker">
+
+        <label class="form__label" for="contact-email">Contact email</label>
+        <input class="form__text-area" id="contact-email" name="contact-email" value="cpi@ons.gov.uk">
+
+        <label class="form__label" for="contact-telephone">Contact telephone</label>
+        <input class="form__text-area" id="contact-telephone" name="contact-telephone" value="+44 (0)1633 456900">
+
+        <h2 class="margin-top--5">Related links</h2>
+
+        <ul class="list-links">
+          <li><span class="padding-right--1"><strong>Dataset</strong><br />Consumer price inflation</span> <span><a class="margin-right--1">Edit</a> <a>Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Bulletin</strong><br />UK consumer price inflation</span> <span><a class="margin-right--1">Edit</a> <a>Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Methodology</strong><br />Consumer Price Inflation (includes all 3 indices – CPIH, CPI and RPI) QMI</span> <span><a class="margin-right--1">Edit</a> <a href="#">Delete</a></span></li>
+          <li><a href="related-link">Add a related link</a></li>
+        </ul>
+
       </div>
     </div>
-  </div>
 
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">About this dataset</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">CPIH is the most comprehensive measure of inflation. It extends CPI to include a measure of the costs associated with owning, maintaining and living in one's own home, known as owner occupiers' housing costs (OOH), along with council tax. This dataset provides CPIH time series (2005 to latest published month), allowing users to customise their own selection, view or download.</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
+    <div class="wrapper padding-top--6 padding-bottom--0">
+      <div class="col-wrap">
+        <div class="col col--md-one col--lg-one">
+            <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="preview">
+              Save and continue
+            </a>
+            <a class="font-xsmall" href="#">Save</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="wrapper">
-    <hr>
   </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Keywords</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Inflation</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">National Statistic</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Yes</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Release frequency</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Monthly</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Usage information</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Open Government Licence v3.0</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--6 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one col--lg-one">
-        <h2 class="roboto">Contact details</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Contact name</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">James Tucker</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Contact email</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">cpi@ons.gov.uk</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Contact telephone</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">+44 (0)1633 456900</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a href="#">Edit</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--6 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one col--lg-one">
-        <h2 class="roboto">Related links</h2>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Dataset</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Consumer price inflation</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a class="padding-right--1" href="#">Edit</a> <a href="#">Delete</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Bulletin</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">UK consumer price inflation</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a class="padding-right--1" href="#">Edit</a> <a href="#">Delete</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="margin-bottom--3 font-weight--bold">Methodology</p>
-      </div>
-      <div class="col col--md-half col--lg-half">
-        <p class="margin-bottom--3">Consumer Price Inflation (includes all 3 indices – CPIH, CPI and RPI) QMI</p>
-      </div>
-      <div class="col col--md-one-quarter col--lg-one-quarter">
-        <p class="align-md--right margin-bottom--3"><a class="padding-right--1" href="#">Edit</a> <a href="#">Delete</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper">
-    <hr>
-  </div>
-
-  <div class="wrapper padding-top--2 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one col--lg-one">
-        <p class="margin-bottom--3"><a href="#">Add another related link</a></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="wrapper padding-top--6 padding-bottom--0">
-    <div class="col-wrap">
-      <div class="col col--md-one col--lg-one">
-          <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="preview">
-            Save and continue
-          </a>
-          <!-- <a class="font-xsmall" href="#">Cancel</a> -->
-      </div>
-    </div>
-  </div>
-
 </div>

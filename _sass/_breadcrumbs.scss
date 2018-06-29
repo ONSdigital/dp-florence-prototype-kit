@@ -13,14 +13,20 @@
   background-image: url(../assets/img/chevron-icon.svg);
   background-size: 12px 14px;
   background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: $spacing-unit*3;
-  margin-right: $spacing-unit;
-  padding-bottom: $spacing-unit/2;
+  background-position: left 30%;
+  padding-top: 0;
+  padding-left: 1em;
   line-height: 1.2;
   display: inline;
+  padding-right: 8px;
+  margin-right: 0px;
 }
 
 .breadcrumb__item::after {
   content: none;
+}
+
+.breadcrumb__item:first-child {
+  background:none;
+  padding-left: 0;
 }

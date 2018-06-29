@@ -1,0 +1,97 @@
+---
+layout: prototype
+warning: false
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+---
+
+<style media="screen">
+  ul.list-links {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.list-links li {
+    border-top: 1px solid #D0D2D3;
+    padding: 24px 0 24px 0;
+  }
+
+  ul.list-links li span {
+    display: block;
+  }
+
+  @media only screen and (min-width: 768px) {
+
+    ul.list-links li {
+      display: flex;
+    }
+
+  ul.list-links li span {
+    width:80%;
+  }
+
+  ul.list-links li span:last-child {
+    width:20%;
+  }
+}
+</style>
+
+<div class="prototype florence margin-bottom--3">
+
+  <div class="wrapper margin-top--6">
+    <div class="col-wrap">
+      <div class="col col--md-one col--lg-one">
+        <a class="back-link" href="publish-new-data">Back</a>
+        <h1 class="roboto padding-top--2">Edit edition metadata</h1>
+        <p class="margin-bottom--0"><strong>Dataset</strong> Consumer Prices Index including owner occupiers' housing costs (CPIH)</p>
+        <p class="margin-bottom--0"><strong>Edition</strong> June 2018</p>
+        <p><strong>Version</strong> 1.0</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper padding-top--1 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--lg-two-thirds col--lg-two-thirds">
+
+
+        <h2 class="margin-top--0">Dates</h2>
+
+        <label class="form__label" for="release-date">Release date</label>
+        <input class="form__text-area" id="release-date" name="release-date" value="18 June 2018">
+
+        <label class="form__label" for="next-release-date">Next release date</label>
+        <input class="form__text-area" id="next-release-date" name="next-release-date" value="18 July 2018">
+
+        <h2 class="margin-top--4">Notices</h2>
+        <p>Alerts, correction or change summary notices.</p>
+        <p><a href="#">Add a notice</a></p>
+
+        <h2 class="margin-top--4">Dimension descriptions</h2>
+        <p>Descriptions for the dataset dimensions, for example geography or time period.</p>
+        <ul class="list-links">
+          <li><span class="padding-right--1"><strong>Goods and services</strong><br>No description provided</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Geography</strong><br>Provides data at national level for the United Kingdom only. No breakdown of this data to smaller areas is available.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Time</strong><br>Includes the complete available monthly time series for CPIH. Yearly and quarterly data are also available from the main ONS website.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><a href="#">Add a dimension description</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper padding-top--6 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--md-one col--lg-one">
+          <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="preview">
+            Save and continue
+          </a>
+          <a class="font-xsmall" href="#">Save</a>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -12,7 +12,7 @@
   <meta name="description" content="Use this to make ONS website prototypes.">
   <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/655b62a/css/main.css">
   <link rel="stylesheet" href="/dp-florence-prototype-kit/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-florence-prototype-kit/sprint/24/publish-a-dataset/preview.html">
+  <link rel="canonical" href="http://localhost:4000/dp-florence-prototype-kit/sprint/27/publish-a-dataset/alert.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Prototype Kit" href="/dp-florence-prototype-kit/feed.xml">
   <link rel="shortcut icon" href="/dp-florence-prototype-kit/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -27,51 +27,40 @@
     
 
     
-      <header class="border-bottom--iron-sm border-bottom--iron-md">
-	<a class="skiplink" href="#main" tabindex="0">
-		Skip to main content
-	</a>
-
-	<div class="wrapper">
-		<div class="header col-wrap">
-
-			<div class="col col--lg-one-third col--md-one-third">
-  <a href="/">
-    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
-  </a>
-</div>
-
-
-			
-
-			
-
-		</div>
-	</div>
-
-	
-
-
-	
-
-</header>
-
-    
 
     <div class="prototype florence margin-bottom--3">
 
   <div class="wrapper margin-top--6">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-        <h1 class="roboto padding-top--0">Preview</h1>
+        <h1 class="roboto padding-top--2">Add an alert notice</h1>
       </div>
     </div>
   </div>
 
-  <div class="wrapper padding-top--6 padding-bottom--0">
+  <div class="wrapper padding-top--2 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--lg-two-thirds col--lg-two-thirds">
+
+        <label class="form__label" for="date">Date</label>
+        <input type=date class="form__text-area" id="date" name="date">
+
+        <label class="form__label" for="description">Description</label>
+        <textarea class="form__text-area" id="description" name="description" rows="8"></textarea>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper padding-top--1 padding-bottom--0">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-        <p>Loading preview</p>
+          <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="#">
+            Add
+          </a>
+          <a class="font-xsmall" href="#">Cancel</a>
       </div>
     </div>
   </div>
