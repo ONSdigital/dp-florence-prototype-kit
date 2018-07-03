@@ -12,7 +12,7 @@
   <meta name="description" content="Use this to make ONS website prototypes.">
   <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/655b62a/css/main.css">
   <link rel="stylesheet" href="/dp-florence-prototype-kit/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/dp-florence-prototype-kit/sprint/27/publish-a-dataset/related-link.html">
+  <link rel="canonical" href="http://localhost:4000/dp-florence-prototype-kit/sprint/27/publish-a-dataset/dimension-description.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Prototype Kit" href="/dp-florence-prototype-kit/feed.xml">
   <link rel="shortcut icon" href="/dp-florence-prototype-kit/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -33,7 +33,7 @@
   <div class="wrapper margin-top--6">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-        <h1 class="roboto padding-top--2">Add a related link</h1>
+        <h1 class="roboto padding-top--2">Add a dimension description</h1>
       </div>
     </div>
   </div>
@@ -42,11 +42,12 @@
     <div class="col-wrap">
       <div class="col col--lg-two-thirds col--lg-two-thirds">
 
-        <label class="form__label" for="url">URL</label>
-        <input class="form__text-area" id="url" name="url">
+        <label class="form__label" for="name">Dimension name</label>
+        <input class="form__text-area" id="name" name="name">
 
-        <label class="form__label" for="title">Title</label>
-        <input class="form__text-area" id="title" name="title">
+        <label class="form__label" for="description">Description</label>
+        <textarea class="form__text-area" id="description" name="description" rows="8"></textarea>
+
 
 
       </div>
@@ -56,10 +57,10 @@
   <div class="wrapper padding-top--1 padding-bottom--0">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-          <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="key-metadata">
+          <a class="btn btn--primary btn--thick link--no-underline font-weight--bold margin-right--1" href="edit-edition-metadata">
             Add
           </a>
-          <a class="font-xsmall" href="key-metadata">Cancel</a>
+          <a class="font-xsmall" href="edit-edition-metadata">Cancel</a>
       </div>
     </div>
   </div>

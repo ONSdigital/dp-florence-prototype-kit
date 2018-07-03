@@ -14,7 +14,7 @@ footer: false
   <div class="wrapper margin-top--6">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-        <h1 class="roboto padding-top--2">Add a notice</h1>
+        <h1 class="roboto padding-top--2">Add a usage note</h1>
       </div>
     </div>
   </div>
@@ -23,24 +23,8 @@ footer: false
     <div class="col-wrap">
       <div class="col col--lg-two-thirds col--lg-two-thirds">
 
-        <fieldset>
-          <legend>
-            <p class="font-weight--bold margin-top--1">
-              Type
-            </p>
-          </legend>
-            <div><input id="notice-type-1" name="notice-type" type="radio" value="alert">
-            <label for="notice-type-1">Alert</label></div>
-            <div><input id="notice-type-2" name="notice-type" type="radio" value="correction">
-            <label for="notice-type-2">Correction</label></div>
-            <div><input id="notice-type-3" name="notice-type" type="radio" value="change-summary">
-            <label for="notice-type-3">Change summary</label></div>
-        </fieldset>
-
-        <br>
-
-        <label class="form__label" for="date">Date</label>
-        <input type=date class="form__text-area" id="date" name="date">
+        <label class="form__label" for="name">Title</label>
+        <input class="form__text-area" id="name" name="name">
 
         <label class="form__label" for="description">Description</label>
         <textarea class="form__text-area" id="description" name="description" rows="8"></textarea>
