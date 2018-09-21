@@ -55,15 +55,18 @@ footer: false
       <div class="col col--lg-two-thirds col--lg-two-thirds">
 
         <!-- <p class="margin-bottom--3"><strong>ID</strong> CPIH01</p> -->
+        <h2>Title</h2>
 
-        <label class="form__label" for="title">Title</label>
+        <label class="form__label visuallyhidden" for="title">Title</label>
         <input class="form__text-area" id="title" name="title" value="Consumer Prices Index including owner occupiers' housing costs (CPIH)">
 
+        <h2 class="margin-top--4">Release dates</h2>
+
         <label class="form__label" for="release-date">Release date</label>
-        <input class="form__text-area" id="release-date" name="release-date" value="18 June 2018">
+        <input type="date" class="form__text-area" id="release-date" name="release-date">
 
         <label class="form__label" for="next-release-date">Next release date</label>
-        <input class="form__text-area" id="next-release-date" name="next-release-date" value="18 July 2018">
+        <input type="date" class="form__text-area" id="next-release-date" name="next-release-date">
 
         <fieldset>
           <legend>
@@ -81,10 +84,40 @@ footer: false
             <label for="release-frequency-4">Annually</label></div>
         </fieldset>
 
-        <br>
+        <h2 class="margin-top--4">Notices</h2>
+        <p>Add an alert, correction, change summary or usage note.</p>
+        <p><a href="notice">Add a notice</a></p>
 
-        <label class="form__label" for="about">About this dataset</label>
+        <h2 class="margin-top--4">About</h2>
+
+        <label class="visuallyhidden form__label" for="about">About this dataset</label>
         <textarea class="form__text-area" id="about" name="about" rows="8">CPIH is the most comprehensive measure of inflation. It extends CPI to include a measure of the costs associated with owning, maintaining and living in one's own home, known as owner occupiers' housing costs (OOH), along with council tax. This dataset provides CPIH time series (2005 to latest published month), allowing users to customise their own selection, view or download.</textarea>
+
+        <h3 class="margin-top--4">In this dataset</h3>
+        <ul class="list-links">
+          <li><span class="padding-right--1"><strong>Goods and services</strong></span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Geography</strong><br>Provides data at national level for the United Kingdom only. No breakdown of this data to smaller areas is available.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><span class="padding-right--1"><strong>Time</strong><br>Includes the complete available monthly time series for CPIH. Yearly and quarterly data are also available from the main ONS website.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
+          <li><a href="dimension-description">Add a dimension description</a></li>
+        </ul>
+
+        <label class="form__label" for="keywords">Keywords</label>
+        <input class="form__text-area" id="keywords" name="keywords" value="Inflation, Economy">
+
+        <label class="form__label" for="usage">Licence</label>
+        <input class="form__text-area" id="usage" name="usage" value="Open Government Licence v3.0">
+
+        <fieldset>
+          <legend>
+            <p class="font-weight--bold margin-top--1">
+              National Statistic
+            </p>
+          </legend>
+              <input id="national-statistic-1" name="national-statistic" type="radio" value="yes" checked="checked">
+              <label for="national-statistic-1">Yes</label>
+              <input id="national-statistic-2" name="national-statistic" type="radio" value="no" class="margin-left--1">
+              <label for="national-statistic-2">No</label>
+        </fieldset>
 
         <h2 class="margin-top--4">Contact details</h2>
 
@@ -105,24 +138,6 @@ footer: false
           <li><span class="padding-right--1"><strong>Methodology</strong><br />Consumer Price Inflation (includes all 3 indices – CPIH, CPI and RPI) QMI</span> <span><a class="margin-right--1">Edit</a> <a href="#">Delete</a></span></li>
           <li><a href="related-link">Add a related link</a></li>
         </ul>
-
-        <label class="form__label" for="keywords">Keywords</label>
-        <input class="form__text-area" id="keywords" name="keywords" value="Inflation, Economy">
-
-        <label class="form__label" for="usage">Usage information</label>
-        <input class="form__text-area" id="usage" name="usage" value="Open Government Licence v3.0">
-
-        <fieldset>
-          <legend>
-            <p class="font-weight--bold margin-top--1">
-              National Statistic
-            </p>
-          </legend>
-              <input id="national-statistic-1" name="national-statistic" type="radio" value="yes" checked="checked">
-              <label for="national-statistic-1">Yes</label>
-              <input id="national-statistic-2" name="national-statistic" type="radio" value="no" class="margin-left--1">
-              <label for="national-statistic-2">No</label>
-        </fieldset>
 
       </div>
     </div>
