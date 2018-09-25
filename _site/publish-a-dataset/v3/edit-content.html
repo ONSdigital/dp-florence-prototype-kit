@@ -94,7 +94,7 @@
   <div class="wrapper margin-top--6">
     <div class="col-wrap">
       <div class="col col--md-one col--lg-one">
-        <a class="back-link" href="select-release">Back</a>
+        <a class="back-link" href="editions">Back</a>
         <h1 class="roboto padding-top--2">Edit content</h1>
       </div>
     </div>
@@ -144,12 +144,15 @@
         <textarea class="form__text-area" id="about" name="about" rows="8">CPIH is the most comprehensive measure of inflation. It extends CPI to include a measure of the costs associated with owning, maintaining and living in one's own home, known as owner occupiers' housing costs (OOH), along with council tax. This dataset provides CPIH time series (2005 to latest published month), allowing users to customise their own selection, view or download.</textarea>
 
         <h3 class="margin-top--4">In this dataset</h3>
-        <ul class="list-links">
-          <li><span class="padding-right--1"><strong>Goods and services</strong></span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
-          <li><span class="padding-right--1"><strong>Geography</strong><br>Provides data at national level for the United Kingdom only. No breakdown of this data to smaller areas is available.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
-          <li><span class="padding-right--1"><strong>Time</strong><br>Includes the complete available monthly time series for CPIH. Yearly and quarterly data are also available from the main ONS website.</span> <span><a class="margin-right--1" href="#">Edit</a> <a href="#">Delete</a></span></li>
-          <li><a href="dimension-description">Add a dimension description</a></li>
-        </ul>
+
+        <label class="form__label" for="dimension-1">Goods and services</label>
+        <textarea class="form__text-area" id="dimension-1" name="dimension-1" rows="3"></textarea>
+
+        <label class="form__label" for="dimension-2">Geography</label>
+        <textarea class="form__text-area" id="dimension-2" name="dimension-2" rows="3">Provides data at national level for the United Kingdom only. No breakdown of this data to smaller areas is available.</textarea>
+
+        <label class="form__label" for="dimension-3">Time</label>
+        <textarea class="form__text-area" id="dimension-3" name="dimension-3" rows="3">Includes the complete available monthly time series for CPIH. Yearly and quarterly data are also available from the main ONS website.</textarea>
 
         <label class="form__label" for="keywords">Keywords</label>
         <input class="form__text-area" id="keywords" name="keywords" value="Inflation, Economy">
