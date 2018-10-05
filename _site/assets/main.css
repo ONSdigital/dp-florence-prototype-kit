@@ -214,7 +214,9 @@
   .prototype .border--iron {
     border: 1px solid #D0D2D3; }
   .prototype .border-left--matisse {
-    border-left: 7px solid #206095; }
+    border-left: 8px solid #206095; }
+  .prototype .border-left--carrot {
+    border-left: 8px solid #FF9933; }
   .prototype .border-bottom--iron {
     border-bottom: 1px solid #D0D2D3; }
   .prototype .border-top--iron {
